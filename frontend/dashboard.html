@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Quality Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-box">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>Student Dashboard</h1>
+                <p id="welcomeText"></p>
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+        <div id="message"></div>
+
+        <form id="requestForm">
+
+            <div class="grid-2">
+
+                <div class="input-group">
+                    <label>Student Name</label>
+                    <input type="text" id="studentName" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Student Email</label>
+                    <input type="email" id="studentEmail" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Course</label>
+                    <input type="text" id="course" placeholder="BCA, B.Tech, BA..." required>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" id="subject" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Notes Type</label>
+
+                    <select id="notesType" required>
+                        <option value="">Select Notes Type</option>
+                        <option>Short Notes</option>
+                        <option>Handwritten Notes</option>
+                        <option>Exam Notes</option>
+                        <option>Personalized Notes</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Language</label>
+
+                    <select id="language" required>
+                        <option value="">Select Language</option>
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Hinglish</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Deadline</label>
+                    <input type="date" id="deadline" required>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <label>Full Syllabus</label>
+                <textarea id="syllabus" placeholder="Enter full syllabus..." required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>Extra Information</label>
+                <textarea id="extraInfo" placeholder="Any extra instructions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Continue To Payment
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

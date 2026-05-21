@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Quality Notes</title>
+
+    <link
+    rel="stylesheet"
+    href="css/style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo-nav">
+            Quality Notes
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="owner.html">Founder</a></li>
+
+            <li><a href="admin.html">Admin</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ADMIN LOGIN -->
+
+    <div class="container">
+
+        <div
+        id="adminLoginBox"
+        class="form-box"
+        style="max-width:500px;">
+
+            <h2>
+                Admin Access
+            </h2>
+
+            <div id="loginMessage"></div>
+
+            <div class="input-group">
+
+                <label>
+                    Enter Admin Password
+                </label>
+
+                <input
+                type="password"
+                id="adminPassword"
+                placeholder="Enter password">
+
+            </div>
+
+            <button
+            class="btn"
+            onclick="checkAdminPassword()">
+
+            Access Dashboard
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ADMIN PANEL -->
+
+        <div
+        id="adminPanel"
+        style="
+        display:none;
+        width:100%;
+        max-width:1200px;
+        ">
+
+            <div class="about-box">
+
+                <div
+                style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                flex-wrap:wrap;
+                gap:20px;
+                margin-bottom:30px;
+                ">
+
+                    <h2>
+                        Admin Dashboard
+                    </h2>
+
+                    <button
+                    onclick="adminLogout()"
+                    class="btn"
+                    style="
+                    width:auto;
+                    padding:12px 25px;
+                    ">
+
+                    Logout
+
+                    </button>
+
+                </div>
+
+                <div
+                style="
+                overflow-x:auto;
+                ">
+
+                    <table
+                    style="
+                    width:100%;
+                    border-collapse:collapse;
+                    min-width:900px;
+                    ">
+
+                        <thead>
+
+                            <tr
+                            style="
+                            background:rgba(255,255,255,0.05);
+                            ">
+
+                                <th class="table-cell">
+                                    Student
+                                </th>
+
+                                <th class="table-cell">
+                                    Subject
+                                </th>
+
+                                <th class="table-cell">
+                                    Notes Type
+                                </th>
+
+                                <th class="table-cell">
+                                    Price
+                                </th>
+
+                                <th class="table-cell">
+                                    Status
+                                </th>
+
+                                <th class="table-cell">
+                                    Upload PDF
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="requestTableBody">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

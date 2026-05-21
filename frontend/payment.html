@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Payment - Quality Notes</title>
+
+    <link
+    rel="stylesheet"
+    href="css/style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo-nav">
+            Quality Notes
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="owner.html">Founder</a></li>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- PAYMENT SECTION -->
+
+    <div class="container">
+
+        <div class="form-box"
+        style="max-width:550px; text-align:center;">
+
+            <h2>
+                Complete Payment
+            </h2>
+
+            <p
+            id="priceText"
+            style="
+            margin-bottom:25px;
+            color:#cbd5e1;
+            font-size:18px;
+            ">
+            </p>
+
+            <div
+            style="
+            padding:20px;
+            border-radius:25px;
+            background:rgba(255,255,255,0.05);
+            margin-bottom:25px;
+            ">
+
+                <img
+                src="images/qr.jpeg"
+                alt="QR Code"
+
+                style="
+                width:100%;
+                max-width:300px;
+                border-radius:20px;
+                ">
+
+            </div>
+
+            <p
+            style="
+            color:#cbd5e1;
+            margin-bottom:10px;
+            ">
+
+            Scan QR Using:
+
+            </p>
+
+            <div
+            style="
+            display:flex;
+            justify-content:center;
+            gap:15px;
+            flex-wrap:wrap;
+            margin-bottom:20px;
+            ">
+
+                <span class="login-btn">
+                    Google Pay
+                </span>
+
+                <span class="login-btn">
+                    PhonePe
+                </span>
+
+                <span class="login-btn">
+                    Paytm
+                </span>
+
+            </div>
+
+            <p
+            style="
+            color:#60a5fa;
+            margin-bottom:30px;
+            font-size:18px;
+            ">
+
+            UPI ID:
+            mr1272435@naviaxis
+
+            </p>
+
+            <button
+            class="btn"
+            id="paymentBtn">
+
+            Payment Completed
+
+            </button>
+
+            <div
+            id="message"
+            style="margin-top:20px;">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/payment.js"></script>
+
+</body>
+</html>

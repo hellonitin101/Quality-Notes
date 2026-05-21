@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Signup - Quality Notes</title>
+
+    <link
+    rel="stylesheet"
+    href="css/style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo-nav">
+            Quality Notes
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="owner.html">Founder</a></li>
+
+        </ul>
+
+        <div class="nav-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+                Signup
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- SIGNUP -->
+
+    <section class="container">
+
+        <div class="form-box">
+
+            <div
+            style="
+            text-align:center;
+            margin-bottom:30px;
+            ">
+
+                <div
+                style="
+                width:90px;
+                height:90px;
+                border-radius:50%;
+                margin:auto;
+                margin-bottom:20px;
+
+                background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+
+                box-shadow:0 0 30px rgba(37,99,235,0.5);
+                ">
+
+                    <i
+                    class="fa-solid fa-user-plus"
+                    style="
+                    font-size:35px;
+                    color:#fff;
+                    ">
+                    </i>
+
+                </div>
+
+                <h2>
+                    Create Account
+                </h2>
+
+                <p
+                style="
+                color:#cbd5e1;
+                margin-top:10px;
+                ">
+
+                Join Quality Notes and start smart learning
+
+                </p>
+
+            </div>
+
+            <div id="message"></div>
+
+            <form id="signupForm">
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                    type="password"
+                    id="password"
+                    placeholder="Create strong password"
+                    required>
+
+                </div>
+
+                <button
+                type="submit"
+                class="btn">
+
+                <i class="fa-solid fa-user-plus"></i>
+                Create Account
+
+                </button>
+
+            </form>
+
+            <div
+            style="
+            margin-top:25px;
+            text-align:center;
+            ">
+
+                <p
+                style="
+                color:#cbd5e1;
+                ">
+
+                Already have an account?
+
+                <a
+                href="login.html"
+                style="
+                color:#60a5fa;
+                text-decoration:none;
+                font-weight:600;
+                ">
+
+                Login
+
+                </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/signup.js"></script>
+
+</body>
+</html>
