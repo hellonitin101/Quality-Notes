@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/request";
+const API_URL = "https://quality-notes.onrender.com/api/request";
 
 
 // ADMIN PASSWORD
