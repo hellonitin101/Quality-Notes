@@ -83,8 +83,8 @@ if(loginForm){
 
         e.preventDefault();
 
-        const email = document.getElementById("loginEmail").value;
-        const password = document.getElementById("loginPassword").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
 
         const message = document.getElementById("message");
 
