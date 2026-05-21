@@ -52,16 +52,32 @@
                 </div>
 
                 <div class="input-group">
-                    <label>Notes Type</label>
 
-                    <select id="notesType" required>
-                        <option value="">Select Notes Type</option>
-                        <option>Short Notes</option>
-                        <option>Handwritten Notes</option>
-                        <option>Exam Notes</option>
-                        <option>Personalized Notes</option>
-                    </select>
-                </div>
+    <label>
+        Notes Type
+    </label>
+
+    <select id="notesType" required>
+
+        <option value="">Select Notes Type</option>
+        <option value="Short Notes">Short Notes</option>
+        <option value="Handwritten Notes">Handwritten Notes</option>
+        <option value="Exam Notes">Exam Notes</option>
+        <option value="Personalized Notes">Personalized Notes</option>
+        <option value="Other">Other</option>
+
+    </select>
+
+    <input
+    type="text"
+    id="customNotesType"
+    placeholder="Enter Custom Notes Type"
+    style="
+    display:none;
+    margin-top:15px;
+    ">
+
+</div>
 
                 <div class="input-group">
                     <label>Language</label>
@@ -72,6 +88,15 @@
                         <option>Hindi</option>
                         <option>Hinglish</option>
                     </select>
+
+                    <input
+    type="text"
+    id="customLanguage"
+    placeholder="Enter Custom Language"
+    style="
+    display:none;
+    margin-top:15px;
+    ">
                 </div>
 
                 <div class="input-group">
